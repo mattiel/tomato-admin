@@ -202,6 +202,7 @@ body {
   font-weight: 400;
   letter-spacing: -.035rem;
   padding: 0 1rem;
+  justify-content: center;
 }
 
 .taa-dashboard-summary-shortcuts__action .glyph {
