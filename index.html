@@ -1,49 +1,84 @@
 <!DOCTYPE html>
-
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/glyphs.css">
     <link rel="stylesheet" href="css/tomato.css">
 </head>
 
 <body>
-    <header class="taa-header">
-        <div class="taa-header__logo"><img src="assets/img/logo.svg"></div>
-        <div class="taa-header__title">보정 할인마트</div>
-    </header>
-    <div class="taa-container scroll-y">
+    <header class="taa-dashboard-fixed-header">
+        <nav class="taa-header pos-relative">
+            <div class="taa-header__logo"><img src="assets/img/logo.svg"></div>
+            <div class="taa-header__title">보정 할인마트</div>
+        </nav>
         <section class="taa-dashboard-date-selector">
-            <div class="taa-dashboard-date-selector__item taa-dashboard-date-selector__item--selected">
-                <span class="taa-dashboard-date-selector__item__dotw">월</span>
-                <span class="taa-dashboard-date-selector__item__day">16</span>
-            </div>
-            <div class="taa-dashboard-date-selector__item">
-                <span class="taa-dashboard-date-selector__item__dotw">화</span>
-                <span class="taa-dashboard-date-selector__item__day">17</span>
-            </div>
-            <div class="taa-dashboard-date-selector__item">
-                <span class="taa-dashboard-date-selector__item__dotw">수</span>
-                <span class="taa-dashboard-date-selector__item__day">18</span>
-            </div>
-            <div class="taa-dashboard-date-selector__item">
-                <span class="taa-dashboard-date-selector__item__dotw">목</span>
-                <span class="taa-dashboard-date-selector__item__day">19</span>
-            </div>
-            <div class="taa-dashboard-date-selector__item">
-                <span class="taa-dashboard-date-selector__item__dotw">금</span>
-                <span class="taa-dashboard-date-selector__item__day">20</span>
-            </div>
-            <div class="taa-dashboard-date-selector__item">
-                <span class="taa-dashboard-date-selector__item__dotw">토</span>
-                <span class="taa-dashboard-date-selector__item__day">21</span>
-            </div>
-            <div class="taa-dashboard-date-selector__item">
-                <span class="taa-dashboard-date-selector__item__dotw">일</span>
-                <span class="taa-dashboard-date-selector__item__day">22</span>
-            </div>
+            <div class="swiper-wrapper">
+                <section class="taa-dashboard-date-selector__page swiper-slide">
+                    <div class="taa-dashboard-date-selector__item taa-dashboard-date-selector__item--selected">
+                        <span class="taa-dashboard-date-selector__item__dotw">월</span>
+                        <span class="taa-dashboard-date-selector__item__day">16</span>
+                    </div>
+                    <div class="taa-dashboard-date-selector__item">
+                        <span class="taa-dashboard-date-selector__item__dotw">화</span>
+                        <span class="taa-dashboard-date-selector__item__day">17</span>
+                    </div>
+                    <div class="taa-dashboard-date-selector__item">
+                        <span class="taa-dashboard-date-selector__item__dotw">수</span>
+                        <span class="taa-dashboard-date-selector__item__day">18</span>
+                    </div>
+                    <div class="taa-dashboard-date-selector__item">
+                        <span class="taa-dashboard-date-selector__item__dotw">목</span>
+                        <span class="taa-dashboard-date-selector__item__day">19</span>
+                    </div>
+                    <div class="taa-dashboard-date-selector__item">
+                        <span class="taa-dashboard-date-selector__item__dotw">금</span>
+                        <span class="taa-dashboard-date-selector__item__day">20</span>
+                    </div>
+                    <div class="taa-dashboard-date-selector__item">
+                        <span class="taa-dashboard-date-selector__item__dotw">토</span>
+                        <span class="taa-dashboard-date-selector__item__day">21</span>
+                    </div>
+                    <div class="taa-dashboard-date-selector__item">
+                        <span class="taa-dashboard-date-selector__item__dotw">일</span>
+                        <span class="taa-dashboard-date-selector__item__day">22</span>
+                    </div>
+                </section>
+                <section class="taa-dashboard-date-selector__page swiper-slide">
+                    <div class="taa-dashboard-date-selector__item taa-dashboard-date-selector__item--selected">
+                        <span class="taa-dashboard-date-selector__item__dotw">월</span>
+                        <span class="taa-dashboard-date-selector__item__day">22</span>
+                    </div>
+                    <div class="taa-dashboard-date-selector__item">
+                        <span class="taa-dashboard-date-selector__item__dotw">화</span>
+                        <span class="taa-dashboard-date-selector__item__day">23</span>
+                    </div>
+                    <div class="taa-dashboard-date-selector__item">
+                        <span class="taa-dashboard-date-selector__item__dotw">수</span>
+                        <span class="taa-dashboard-date-selector__item__day">24</span>
+                    </div>
+                    <div class="taa-dashboard-date-selector__item">
+                        <span class="taa-dashboard-date-selector__item__dotw">목</span>
+                        <span class="taa-dashboard-date-selector__item__day">25</span>
+                    </div>
+                    <div class="taa-dashboard-date-selector__item">
+                        <span class="taa-dashboard-date-selector__item__dotw">금</span>
+                        <span class="taa-dashboard-date-selector__item__day">26</span>
+                    </div>
+                    <div class="taa-dashboard-date-selector__item">
+                        <span class="taa-dashboard-date-selector__item__dotw">토</span>
+                        <span class="taa-dashboard-date-selector__item__day">27</span>
+                    </div>
+                    <div class="taa-dashboard-date-selector__item">
+                        <span class="taa-dashboard-date-selector__item__dotw">일</span>
+                        <span class="taa-dashboard-date-selector__item__day">22</span>
+                    </div>
+                </section>
+            </div>            
         </section>
         <section class="taa-dashboard-summary">
             <article class="taa-card taa-card--dashboard-summary">
@@ -80,15 +115,20 @@
 
                 <section class="taa-dashboard-summary__shortcuts">
                     <div class="taa-dashboard-summary-shortcuts__action">
+                        <i class="glyph glyph--size-rect glyph--card-inquiry"></i>
                         카드 승인 조회
                     </div>
                     <div class="taa-dashboard-summary-shortcuts__v-divider"></div>
                     <div class="taa-dashboard-summary-shortcuts__action">
+                        <i class="glyph glyph--size-rect glyph--fee-inquiry"></i>
                         수수료 정산 조회
                     </div>
                 </section>
             </article>
         </section>
+    </header>
+    
+    <div class="taa-container scroll-y">
         <section class="taa-container taa-container--dashboard__sales">
             <h2 class="taa-heading-lg">상품별 매출</h2>
             <article class="taa-card taa-card--sales-list">
@@ -171,14 +211,12 @@
                     </div>
                 </div>
             </article>
-            
-            
         </section>
-        <a class="taa-cta">
-            <span class="">더보기</span>
-            <span class="">(20/62)</span>
+        <a class="taa-cta taa-cta--dashboard-sales-list">
+            <i class="glyph glyph--size-small glyph--plus mr-s"></i>
+            더보기    
+            <span class="taa-cta__dashboard-sales-list-pagination">(20/62)</span>
         </a>
     </div>
 </body>
-
 </html>

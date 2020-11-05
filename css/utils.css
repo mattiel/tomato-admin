@@ -837,3 +837,7 @@
 .silent {
     border: 0 !important;
 }
+
+.pos-relative {
+    position: relative !important; 
+}
