@@ -2,6 +2,9 @@
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .glyph--size-rect {
@@ -16,18 +19,19 @@
 
 .glyph--card-inquiry {
   background-image: url('/assets/glyphs/card-inquiry.svg');
-  background-position: center;
-  background-size: cover;
 }
 
 .glyph--fee-inquiry {
   background-image: url('/assets/glyphs/fee-inquiry.svg');
-  background-position: center;
-  background-size: cover;
 }
 
 .glyph--plus {
   background-image: url('/assets/glyphs/plus.svg');
-  background-position: center;
-  background-size: cover;
+  
+}
+
+.glyph--chevron-left--raw {
+  background-image: url('/assets/glyphs/chevron-left-raw.svg');
+  background-position: left center;
+  background-size: contain
 }

@@ -1,0 +1,36 @@
+:root {
+  --z-index-level-1: 1;
+  --z-index-level-2: 2;
+  --z-index-level-3: 3;
+  --z-index-level-4: 4;
+  --z-index-level-5: 5;
+  --z-index-level-6: 6;
+
+  --header-height: 3.25rem;
+  --dashboard-date-selector-height: 2.75rem;
+  --summary-shortcuts-height: 3.5rem;
+
+  --color-background: #F5F7F9;
+  --color-header-bg: #343434;
+  --color-primary: #19C783;
+  --color-dashboard-summary-card: linear-gradient(300deg, #008845, #1BCB87);
+
+  --gradient-primary: linear-gradient(105deg, #19C591, #419D5C);
+
+  --box-shadow-default: 0 3px 6px #00000029;
+
+  --taa-data-value-font-size: 1.625rem;
+  --taa-data-value-font-weight: 700;
+  --taa-data-unit-font-size: .9375rem;
+
+  --taa-summary-padding: 1rem;
+  --taa-summary-color: white;
+  --taa-summary-bg: var(--color-header-bg);
+
+  --taa-summary-eyebrow-size: .875rem;
+  --taa-summary-eyebrow-color: inherit;
+  --taa-summary-eyebrow-font-weight: 500;
+
+  --taa-summary-label-size: .9375rem;
+  --taa-summary-font-weight: 400;
+}

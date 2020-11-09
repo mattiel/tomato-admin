@@ -1,5 +1,6 @@
-/* header */
+@import url('/css/global.css');
 
+/* header */
 *,
 *::before,
 *::after {
@@ -24,28 +25,6 @@ body {
   overflow-x: hidden;
 }
 
-:root {
-  --z-index-level-1: 1;
-  --z-index-level-2: 2;
-  --z-index-level-3: 3;
-  --z-index-level-4: 4;
-  --z-index-level-5: 5;
-  --z-index-level-6: 6;
-
-  --header-height: 3.25rem;
-  --dashboard-date-selector-height: 2.75rem;
-  --summary-shortcuts-height: 3.5rem;
-
-  --color-background: #F5F7F9;
-  --color-header-bg: #343434;
-  --color-primary: #19C783;
-  --color-dashboard-summary-card: linear-gradient(300deg, #008845, #1BCB87);
-
-  --gradient-primary: linear-gradient(105deg, #19C591, #419D5C);
-
-  --box-shadow-default: 0 3px 6px #00000029;
-}
-
 .taa-container {
   width: 100%;
   margin-top: var(--header-height)
@@ -68,7 +47,14 @@ body {
 .taa-header__title {
   font-size: 1.125rem;
   color: white;
-  font-weight: 500;
+  font-weight: 400;
+}
+
+.taa-header__title--absolute-center {
+  position: absolute;
+  pointer-events: none;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .taa-dashboard-date-selector { 
@@ -358,4 +344,202 @@ body {
 
 .contents-y__content:not(:last-child) {
   margin-bottom: 1rem;
+}
+
+
+
+/* shortcuts card */
+
+.taa-shortcuts-card__summary {
+  position: relative;
+  background-color: var(--color-header-bg);
+  color: white;
+  padding: 1rem;
+  padding-bottom: 2.5rem;
+  margin-bottom: -1.25rem;
+}
+
+.taa-shortcuts-card__summary::before {
+  content: '';
+  position: absolute;
+  width: calc(100% - 1rem - 1rem);
+  height: 1px;
+  background-color: rgba(255, 255, 255, .5);
+  top: 0;
+}
+
+.taa-shortcuts-card__summary__comment {
+  font-size: .75rem;
+  letter-spacing: -.03rem;
+  line-height: 1.125rem;
+}
+
+.taa-shortcuts-card__summary__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.taa-shortcuts-card__summary__title {
+  font-weight: 400;
+  letter-spacing: -.0375rem;
+  font-size: .9375rem;
+}
+
+.taa-data {
+  display: flex;
+  align-items: center;
+}
+
+.taa-data__value {
+  font-size: var(--taa-data-value-font-size);
+  font-weight: var(--taa-data-value-font-weight);
+  line-height: calc(var(--taa-data-value-font-size) * 1.5);
+}
+
+.taa-data__value--color-red {
+  color: red;
+}
+
+.taa-data__unit {
+  font-size: var(---taa-data-unit-font-size);
+  margin-left: .25rem;
+}
+
+.taa-grid {
+  display: grid;
+}
+
+.taa-grid--columns-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.taa-grid--shortcuts-card {
+  position: relative;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: .75rem;
+  z-index: var(--z-index-level-2);
+}
+
+.taa-card--shortcuts-card {
+  box-shadow: 0 3px 6px #00000029;
+  --taa-data-value-font-size: 1.125rem;
+  --taa-data-unit-font-size: 1rem;
+}
+
+.taa-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.taa-card__header__title {
+  font-size: 1rem;
+  letter-spacing: -0.04rem;
+  color: #484848;
+  line-height: 1.5rem;
+}
+
+.taa-card__header__right-cta {
+  background: url(/assets/glyphs/chevron-left-raw-s.svg);
+  background-repeat: no-repeat;
+  width: .3125rem;
+  height: .625rem;
+  background-size: cover;
+}
+
+.taa-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4rem;
+  font-family: 'Spoqa Han Sans';
+  font-size: .8125rem;
+  padding: .125rem .375rem;
+  font-weight: 500;
+}
+
+.taa-badge--green {
+  background-color: #29AC4E;
+  color: white;
+}
+
+.taa-summary {
+  padding: var(--taa-summary-padding);
+  background-color: var(--taa-summary-bg);
+  color: var(--taa-summary-color);
+}
+
+.taa-summary__list {
+  padding: .375rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taa-summary__eyebrow {
+  font-family: 'Spoqa Han Sans';
+  font-size: var(--taa-summary-eyebrow-size);
+  font-weight: var(--taa-summary-eyebrow-font-weight);
+}
+
+.taa-summary__label {
+  font-size: var(--taa-summary-label-size);
+  font-weight: var(--taa-summary-label-font-weight);
+}
+
+.taa-summary__label--large {
+  --taa-summary-label-size: 1.375rem;
+}
+
+.taa-content-header {
+  display: flex;
+  padding: .75rem 1rem;
+}
+
+.taa-content-header__title {
+  font-size: 1.125rem;
+  margin-top: .75rem;
+  letter-spacing: -.045rem;
+  line-height: 1.5;
+}
+
+.taa-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #DBDBDB;
+  padding: 0 1rem;
+  background-color: white;
+}
+
+.taa-list--shortcuts-card-inquiry {
+  --taa-data-value-font-size: 1.0625rem;
+  --taa-data-value-font-weight: 300;
+}
+
+.taa-list__item {
+  position: relative;
+  padding: 1.5rem 0;
+}
+
+.taa-list__item::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  width: calc(100% + 1rem);
+  height: 1px;
+  background-color: #DBDBDB;
+}
+
+.taa-list__item__line {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.taa-list__item__line__text {
+  color: #7B7B7B;
+  font-family: 'Spoqa Han Sans';
+  line-height: 1.5;
 }
