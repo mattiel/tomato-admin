@@ -716,8 +716,9 @@ body {
 }
 
 .taa-card-overlay__header--shortcuts-fee-anchor {
+  --anchor-point: 154px;
   position: fixed;
-  top: 131px;
+  top: var(--anchor-point);
 }
 
 .taa--has-header {
