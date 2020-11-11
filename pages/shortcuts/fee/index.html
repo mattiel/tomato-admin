@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/utils.css">
+    <link rel="stylesheet" href="/css/glyphs.css">
+    <link rel="stylesheet" href="/css/tomato.css">
+</head>
+<script>
+    const toggleClass = (el, cl) => document.querySelector(el).classList.toggle(cl);
+</script>
+
+<body>
+    <header class="taa-header">
+        <a href="/index.html"><i class="glyph glyph--chevron-left--raw"></i></a>
+        <div class="taa-header__title taa-header__title--absolute-center">수수료 정산 조회</div>
+        <div></div>
+    </header>
+    <section class="taa-summary">
+        <div class="taa-summary__list">
+            <span class="taa-summary__eyebrow">2020-08-20 ~ 2020-09-20</span>
+        </div>
+        <div class="js-summary-shrink">
+            <div class="taa-summary__list">
+                <span class="taa-summary__label">매출액</span>
+                <div class="taa-data">
+                    <span class="taa-data__value taa-data__value--normal">1,000,000,000</span>
+                    <span class="taa-data__unit">원</span>
+                </div>
+            </div>
+            <div class="taa-summary__list taa-summary__list--small">
+                <a class="taa-summary__label"
+                    onclick="toggleClass('#listExpand', 'taa-summary__list-expand--active')">(-) 수수료 계</a>
+                <div class="taa-data">
+                    <span class="taa-data__value">6,000,000</span>
+                    <span class="taa-data__unit">원</span>
+                </div>
+            </div>
+            <div class="taa-summary__list-expand" id="listExpand">
+                <div class="taa-summary__list-expand__container">
+                    <div class="taa-summary__list">
+                        <span class="taa-summary__label">기본 수수료(0.03%)</span>
+                        <div class="taa-data">
+                            <span class="taa-data__value">6,000,000</span>
+                            <span class="taa-data__unit">원</span>
+                        </div>
+                    </div>
+                    <div class="taa-summary__list">
+                        <span class="taa-summary__label">카드 추가 수수료(0.03%)</span>
+                        <div class="taa-data">
+                            <span class="taa-data__value">6,000,000</span>
+                            <span class="taa-data__unit">원</span>
+                        </div>
+                    </div>
+                    <div class="taa-summary__list">
+                        <span class="taa-summary__label">APP 추가 수수료(0.03%)</span>
+                        <div class="taa-data">
+                            <span class="taa-data__value">6,000,000</span>
+                            <span class="taa-data__unit">원</span>
+                        </div>
+                    </div>
+                    <div class="taa-summary__list">
+                        <span class="taa-summary__label">포인트 적립 수수료(0.03%)</span>
+                        <div class="taa-data">
+                            <span class="taa-data__value">6,000,000</span>
+                            <span class="taa-data__unit">원</span>
+                        </div>
+                    </div>
+                    <div class="taa-summary__list">
+                        <span class="taa-summary__label">캐시백 적립 수수료(0.03%)</span>
+                        <div class="taa-data">
+                            <span class="taa-data__value">6,000,000</span>
+                            <span class="taa-data__unit">원</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="taa-summary__list taa-summary__list--small">
+                <span class="taa-summary__label">(-) 내 매장 카드 승인</span>
+                <div class="taa-data">
+                    <span class="taa-data__value">6,000,000</span>
+                    <span class="taa-data__unit">원</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="taa-summary taa-summary--shortcuts-fee-anchor">
+        <div class="taa-summary__list taa-summary__list--final">
+            <span class="taa-summary__label">입금 예정금액</span>
+            <div class="taa-data">
+                <span class="taa-data__value">494,000,000</span>
+                <span class="taa-data__unit">원</span>
+            </div>
+        </div>
+    </section>
+    <div class="taa-card-overlay taa-card-overlay--shortcuts-fee-anchor">
+        <div class="taa-card-overlay__header">
+            <h2 class="taa-heading-mid ml-m">정산 조회 내역</h2>
+        </div>
+        <div class="taa-card-overlay__content">
+            <table class="taa-table">
+                <tr class="taa-table__row taa-table__row--header">
+                    <th class="taa-table__header">일자</th>
+                    <th class="taa-table__header">매출액</th>
+                    <th class="taa-table__header">(-)수수료 계<br>(-)내 매장카드</th>
+                    <th class="taa-table__header">입금대상금액</th>
+                </tr>
+                <tr class="taa-table__row">
+                    <td class="taa-table__data taa-table__data__gray">10-01</td>
+                    <td class="taa-table__data">800,000,000</td>
+                    <td class="taa-table__data taa-table__data__gray">2,000,000<br>2,000,000</td>
+                    <td class="taa-table__data taa-table__data__highlight">500,000,000</td>
+                </tr>
+                <tr class="taa-table__row">
+                    <td class="taa-table__data taa-table__data__gray">10-01</td>
+                    <td class="taa-table__data">800,000,000</td>
+                    <td class="taa-table__data taa-table__data__gray">2,000,000<br>2,000,000</td>
+                    <td class="taa-table__data taa-table__data__highlight">500,000,000</td>
+                </tr>
+                <tr class="taa-table__row">
+                    <td class="taa-table__data taa-table__data__gray">10-01</td>
+                    <td class="taa-table__data">800,000,000</td>
+                    <td class="taa-table__data taa-table__data__gray">2,000,000<br>2,000,000</td>
+                    <td class="taa-table__data taa-table__data__highlight">500,000,000</td>
+                </tr>
+                <tr class="taa-table__row">
+                    <td class="taa-table__data taa-table__data__gray">10-01</td>
+                    <td class="taa-table__data">800,000,000</td>
+                    <td class="taa-table__data taa-table__data__gray">2,000,000<br>2,000,000</td>
+                    <td class="taa-table__data taa-table__data__highlight">500,000,000</td>
+                </tr>
+                <tr class="taa-table__row">
+                    <td class="taa-table__data taa-table__data__gray">10-01</td>
+                    <td class="taa-table__data">800,000,000</td>
+                    <td class="taa-table__data taa-table__data__gray">2,000,000<br>2,000,000</td>
+                    <td class="taa-table__data taa-table__data__highlight">500,000,000</td>
+                </tr>
+                <tr class="taa-table__row">
+                    <td class="taa-table__data taa-table__data__gray">10-01</td>
+                    <td class="taa-table__data">800,000,000</td>
+                    <td class="taa-table__data taa-table__data__gray">2,000,000<br>2,000,000</td>
+                    <td class="taa-table__data taa-table__data__highlight">500,000,000</td>
+                </tr>
+                <tr class="taa-table__row">
+                    <td class="taa-table__data taa-table__data__gray">10-01</td>
+                    <td class="taa-table__data">800,000,000</td>
+                    <td class="taa-table__data taa-table__data__gray">2,000,000<br>2,000,000</td>
+                    <td class="taa-table__data taa-table__data__highlight">500,000,000</td>
+                </tr>
+                <tr class="taa-table__row">
+                    <td class="taa-table__data taa-table__data__gray">10-01</td>
+                    <td class="taa-table__data">800,000,000</td>
+                    <td class="taa-table__data taa-table__data__gray">2,000,000<br>2,000,000</td>
+                    <td class="taa-table__data taa-table__data__highlight">500,000,000</td>
+                </tr>
+                <tr class="taa-table__row">
+                    <td class="taa-table__data taa-table__data__gray">10-01</td>
+                    <td class="taa-table__data">800,000,000</td>
+                    <td class="taa-table__data taa-table__data__gray">2,000,000<br>2,000,000</td>
+                    <td class="taa-table__data taa-table__data__highlight">500,000,000</td>
+                </tr>
+                <tr class="taa-table__row">
+                    <td class="taa-table__data taa-table__data__gray">10-01</td>
+                    <td class="taa-table__data">800,000,000</td>
+                    <td class="taa-table__data taa-table__data__gray">2,000,000<br>2,000,000</td>
+                    <td class="taa-table__data taa-table__data__highlight">500,000,000</td>
+                </tr>
+            </table>
+            <a class="taa-cta taa-cta--fee-shortcut-card-overlay ">
+                <i class="glyph glyph--size-small glyph--plus mr-s"></i>
+                더보기
+                <span class="taa-cta__dashboard-sales-list-pagination">(20/62)</span>
+            </a>
+        </div>
+    </div>
+</body>
+<script src="/js/index.js"></script>
+
+</html>

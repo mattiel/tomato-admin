@@ -21,16 +21,22 @@
 
   --taa-data-value-font-size: 1.625rem;
   --taa-data-value-font-weight: 700;
+  --taa-data-value-color: inherit;
+
   --taa-data-unit-font-size: .9375rem;
+  --taa-data-unit-color: inherit;
 
   --taa-summary-padding: 1rem;
   --taa-summary-color: white;
   --taa-summary-bg: var(--color-header-bg);
+
+  --taa-summary-list-padding: .375rem 0;
 
   --taa-summary-eyebrow-size: .875rem;
   --taa-summary-eyebrow-color: inherit;
   --taa-summary-eyebrow-font-weight: 500;
 
   --taa-summary-label-size: .9375rem;
-  --taa-summary-font-weight: 400;
+  --taa-summary-label-font-weight: 400;
+  --taa-summary-label-opacity: 1;
 }
