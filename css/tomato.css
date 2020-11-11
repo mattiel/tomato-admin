@@ -505,6 +505,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: inherit;
 }
 
 .taa-summary__list-expand {
@@ -694,18 +695,31 @@ body {
   color: #7B7B7B;
 }
 
-.taa-summary--shortcuts-fee-anchor {
+.taa-summary--shortcuts-fee-final-anchor {
   position: sticky;
-  top: calc(var(--header-height) - 1px) ;
+  top: calc(var(--header-height) - 1px + 44px) ;
   padding-top: 0;
+  padding-bottom: 1.5rem;
+  margin-bottom: -1rem;
+}
+
+.taa-summary--shortcuts-fee-date-anchor {
+  position: sticky;
+  top: calc(var(--header-height));
+  padding-bottom: 0;
+  margin-bottom: -1rem;
+  z-index: var(--z-index-level-2);
 }
 
 .taa-card-overlay--shortcuts-fee-anchor {
   position: sticky;
-  top: 500px;
 }
 
 .taa-card-overlay__header--shortcuts-fee-anchor {
   position: fixed;
   top: 131px;
+}
+
+.taa--has-header {
+  margin-top: var(--header-height);
 }

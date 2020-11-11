@@ -21,20 +21,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const threshold = []
     for(let i = 0; i <= 100; i++) threshold.push(i / 100);
-    console.log(threshold);
     const observerOptions = {
-        threshold: threshold
+        root: document.querySelector('taa-summary--shortcuts-fee-anchor'),
+        threshold: threshold,
     }
-    let prevRatio = 0;
-    const handleSummary = (entries, observer) => {
+    const handleCardHeader = (entries, observer) => {
         entries.forEach(entry => {
-            if(entry.intersectionRatio > prevRatio);
-            entry.target.style.opacity = entry.intersectionRatio * 3;
             console.log(`Ratio: ${entry.intersectionRatio}`, entry.target)
         });
     }
 
     
-    const observer = new IntersectionObserver(handleSummary, observerOptions);
-    observer.observe(document.querySelector('.js-summary-shrink'));
+    const observer = new IntersectionObserver(handleCardHeader, observerOptions);
+    // observer.observe(document.querySelector('.js-watch-card-overlay-header'));
 });
