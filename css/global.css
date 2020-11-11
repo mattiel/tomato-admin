@@ -19,6 +19,8 @@
 
   --box-shadow-default: 0 3px 6px #00000029;
 
+
+  --taa-data-opacity: 1;
   --taa-data-value-font-size: 1.625rem;
   --taa-data-value-font-weight: 700;
   --taa-data-value-color: inherit;

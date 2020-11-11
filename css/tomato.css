@@ -409,6 +409,11 @@ body {
 .taa-data {
   display: flex;
   align-items: center;
+  opacity: var(--taa-data-opacity);
+}
+
+.taa-data--align-right {
+  justify-content: flex-end;
 }
 
 .taa-data__value {
@@ -422,6 +427,11 @@ body {
 
 .taa-data__value--normal {
   --taa-data-value-font-size: 1.375rem;
+  --taa-data-value-font-weight: 300;
+}
+
+.taa-data__value--tiny {
+  --taa-data-value-font-size: .6875rem;
   --taa-data-value-font-weight: 300;
 }
 
@@ -508,6 +518,11 @@ body {
   background-color: inherit;
 }
 
+.taa-summary__list--baseline {
+  align-items: baseline;
+  padding: .375rem 0;
+}
+
 .taa-summary__list-expand {
   --taa-summary-label-size: .875rem;
   --taa-data-value-font-size: 1rem;
@@ -515,6 +530,7 @@ body {
   --taa-summary-label-opacity: .8;
   --taa-data-unit-font-size: .875rem;
   --taa-summary-list-padding: .75rem 0;
+  --taa-data-opacity: .8;
   
   max-height: 0;
   transition: max-height .2s ease-in;

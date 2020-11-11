@@ -121,7 +121,7 @@
 
 @font-face {
   font-family: 'Spoqa Han Sans';
-  font-weight: 400;
+  font-weight: 300;
   src: local('Spoqa Han Sans Regular'),
   url('../assets/fonts/SpoqaHanSansRegular.woff2') format('woff2'),
   url('../assets/fonts/SpoqaHanSansRegular.woff') format('woff'),
@@ -130,7 +130,7 @@
 
 @font-face {
   font-family: 'Spoqa Han Sans';
-  font-weight: 300;
+  font-weight: 200;
   src: local('Spoqa Han Sans Light'),
   url('../assets/fonts/SpoqaHanSansLight.woff2') format('woff2'),
   url('../assets/fonts/SpoqaHanSansLight.woff') format('woff'),
